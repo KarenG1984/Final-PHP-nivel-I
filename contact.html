@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO Tarea - Contáctanos</title>
+  <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="navbar__content">
+        <img src="/Assets/Images/LEGO_logo.png" alt="logo">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Productos</a></li>
+          <li><a href="./about_us.html">Acerca de</a></li>
+          <li><a href="./contact.html">Contáctanos</a></li>
+          <li><a href="./workforus.html">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="contact container">
+    <h1>Contáctanos</h1>
+    <div class="contact_content">
+      <div class="contact__img">
+        <div></div>
+        <img src="./Assets/Images/lego-paint.png" alt="">
+      </div>
+      <form action="">
+        <div class="col-3">
+          <input class="input__contact" type="text" placeholder="Nombre completo">
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3">
+          <input class="input__contact" type="phone" placeholder="Móvil">
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3">
+          <input class="input__contact" type="email" placeholder="Correo electrónico">
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3">
+          <label for="subject">Asunto</label>
+          <select id="subject" name="subject">
+            <option value=""></option>
+            <option value="Pregunta">Pregunta</option>
+            <option value="Queja">Queja</option>
+            <option value="Reclamo">Reclamo</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <textarea name="coments" id="" cols="30" rows="10">Comentarios</textarea>
+        </div>
+        <button type="submit" class="btn-contact">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Copyright Karen Gómez - Con fines educativos</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO Tarea - Trabaja con nosotros</title>
+  <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="navbar__content">
+        <img src="/Assets/Images/LEGO_logo.png" alt="logo">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Productos</a></li>
+          <li><a href="./about_us.html">Acerca de</a></li>
+          <li><a href="./contact.html">Contáctanos</a></li>
+          <li><a href="./workforus.html">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="workforus container">
+    <h1>Construye con nosotros</h1>
+    <div class="workforus_content">
+      <form action="">
+        <div class="col-4">
+          <input class="input__workforus" type="text" placeholder="Nombre completo">
+        </div>
+        <div class="radio">
+          <p>Sexo</p>
+          <label for="Mujer">
+            <input type="radio" name="Mujer"> Mujer
+          </label>
+          <label for="Hombre">
+            <input type="radio" name="Hombre"> Hombre
+          </label>
+          <label for="otro">
+            <input type="radio" name="Otro"> Otro
+          </label>
+        </div>
+        <div class="col-4">
+          <label for="subject">Género</label>
+          <select id="gender" name="gender">
+            <option value=""></option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="No binario">No binario</option>
+            <option value="Transgénero">Transgénero</option>
+            <option value="Transexual">Transexual</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <input class="input__workforus" type="phone" placeholder="Móvil">
+        </div>
+        <div class="col-4">
+          <input class="input__workforus" type="email" placeholder="Correo electrónico">
+        </div>
+        <div class="col-4">
+          <label for="subject">Formación académica</label>
+          <select id="subject" name="studies">
+            <option value=""></option>
+            <option value="Bachiller">Bachiller</option>
+            <option value="Técnico">Técnico</option>
+            <option value="Tecnólogo">Tecnólogo</option>
+            <option value="Universitario">Universitario</option>
+            <option value="Maestría">Maestría</option>
+            <option value="Doctorado">Doctorado</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <label class="input_text" for="subject"><input type="checkbox"> Al seleccionar esta casilla admito que he
+            leído y aceptado la Política de protección de datos Personales.</label>
+        </div>
+        <div class="col-4">
+          <label class="input_text" for="subject">Adjuntar Hoja de vida:</label>
+          <input type="file">
+        </div>
+        <button type="submit" class="btn-workforus">Enviar</button>
+      </form>
+      <div class="workforus__img">
+        <img src="./Assets/Images/lego-workforus.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Copyright Karen Gómez - Con fines educativos</p>
+  </footer>
+</body>
+
+</html>
