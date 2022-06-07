@@ -40,6 +40,7 @@ header {
   height: 70px;
   margin: 10px 20px 10px 0;
 }
+/* Navbar */
 .navbar__content ul{
     list-style: none;
     display: flex;
@@ -52,39 +53,48 @@ header {
 }
 .navbar__content ul li a {
   color: var(--black);
-  /* font-weight: bold; */
-  text-transform: uppercase;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
+}
+.navbar__content ul li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--white);
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
 }
 .navbar__content ul li a:hover {
-  text-decoration: underline;
   color: var(--white);
 }
+.navbar__content ul li a:hover::after {
+  transform: scale(1, 1);
+}
 
+/* Home page */
+/* Hero image */
 .hero img {
   width: 100%;
 }
-
+/* Política */
 .content__politics {
-  margin: 10px 0;
+  margin: 24px 0;
 }
 .content__politics h1 {
   font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
 }
 .content__politics p {
   margin: 10px 0;
 }
-
 .hero_build img {
   width: 60%;
   height: 25%;
   display:block;
   margin:auto;
 }
-
+/* Productos home */
 .content__products {
   background-color: var(--blue);
   height: 550px;
@@ -143,7 +153,9 @@ header {
   background: var(--yellow);
   color: var(--blue);
 }
+/* /Home page */
 
+/* Footer */
 footer {
   margin-top: 40px;
   background-color: var(--soft-grey);
@@ -153,18 +165,16 @@ footer p {
   padding: 10px;
   color: var(--black);
 }
+/* /Footer */
 
-/* Acerca de */
-
+/* Nosotros */
 .aboutus {
-  margin: 20px auto;
+  margin: 24px auto;
 }
 .aboutus h2 {
   text-align: center;
-  text-transform: uppercase;
   margin: 10px;
 }
-
 .side-content {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -195,15 +205,15 @@ footer p {
   grid-column: 4 / 6;
   grid-row: 1 / 6;
 }
+/* /Nosotros */
 
 /* Contáctanos */
 .contact {
-  margin: 20px auto;
+  margin: 24px auto;
 }
 .contact h1,
 .workforus h1 {
   text-align: center;
-  text-transform: uppercase;
 }
 .contact_content,
 .workforus_content {
@@ -211,22 +221,19 @@ footer p {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-
 .contact__img img {
   width: 100%;
   margin: 0 auto;
   animation: 2s side-contact-img 0.5s ease-in-out;
 }
-
 @keyframes side-contact-img {
 0% {
-  transform: translateY(400px);
+  transform: translateX(-400px);
   }
 100% {
   transform: translateX(0px);
   }
 }
-
 /* Formulario */
 .contact__content form {
   display: flex;
@@ -259,8 +266,8 @@ textarea {
   margin-top: 12px;
 }
 .input__contact[type="text"],
-[type="phone"],
-[type="email"],
+.input__contact[type="phone"],
+.input__contact[type="email"],
 select,
 option,
 label,
@@ -272,7 +279,6 @@ textarea {
   font-size: 16px;
   font-weight: 600;
   color: var(--warm-grey);
-
 }
 .input__contact ~ .focus-border {
   position: absolute;
@@ -314,10 +320,11 @@ textarea:focus {
   background: var(--yellow);
   color: var(--blue);
 }
+/* /Contáctanos */
 
 /* Trabaja con nosotros */
 .workforus {
-  margin: 20px auto;
+  margin: 24px auto;
 }
 .workforus_content {
   margin: 20px 0;
@@ -326,7 +333,6 @@ textarea:focus {
   width: 100%;
   border-radius: 25%;
 }
-
 .workforus__content form {
   display: flex;
   flex-direction: column;
@@ -353,8 +359,8 @@ option {
   margin-top: 12px;
 }
 .input__workforus[type="text"],
-[type="phone"],
-[type="email"],
+.input__workforus[type="phone"],
+.input__workforus[type="email"],
 [type="file"],
 select,
 option,
@@ -369,8 +375,8 @@ p {
   color: var(--warm-grey);
 }
 .input__workforus[type="text"],
-[type="phone"],
-[type="email"] {
+.input__workforus[type="phone"],
+.input__workforus[type="email"] {
   border: 1px solid;
 }
 .input__workforus[type="text"]:focus,
@@ -380,19 +386,19 @@ p {
   outline: 0 none;
   transition: 0.4s;
 }
-.input_text {
+.input_text,
+[type="file"] {
   font-size: 14px;
 }
 .radio {
   margin-top: 10px;
 }
+/* /Trabaja con nosotros */
 
 /* Productos */
-
 .products h1 {
-  margin: 25px 0;
+  margin: 24px 0;
   text-align: center;
-  text-transform: uppercase;
 }
 .products-main__content {
   display: grid;
@@ -418,3 +424,4 @@ p {
   padding: 15px;
   text-align: right;
 }
+/* /Productos */
